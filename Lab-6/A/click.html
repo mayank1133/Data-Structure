@@ -1,0 +1,45 @@
+<!-- 1. WAP to change background color on click of button. (A) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onclick</title>
+    <style type="text/css">
+        button{
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+        }
+       
+    </style>
+</head>
+<body>
+    <button onclick="start()" id="as">
+        Click Me!
+    </button>
+    <button onclick="stop()" id="as">
+        Click Me to stop
+    </button>
+    <script>
+        function bag()
+        {
+            var r=Math.floor(Math.random()*255);
+            var g=Math.floor(Math.random()*255);
+            var b=Math.floor(Math.random()*255);
+            document.body.style.backgroundColor="rgb("+r+","+g+","+b+")";
+           
+        }
+        function start()
+        {
+            x=setInterval(bag,1000);
+        }
+        function stop()
+        {
+            clearInterval(x);
+        }
+    </script>
+    
+</body>
+</html>
