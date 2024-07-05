@@ -1,0 +1,25 @@
+<!-- 3. WAP to recognize which keyboard event is ƒired. (B) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+</head>
+<body>
+   <input type="text" onkeydown="a()">
+   <input type="text" onkeypress="b()">
+   <input type="text" onkeyup="c()">
+    <script>
+        function a(){
+            alert("Key Down");
+        }
+        function b(){
+            alert("Key Press");
+        }
+        function c(){
+            alert("Key Up");
+        }
+    </script>
+</body>
+</html>

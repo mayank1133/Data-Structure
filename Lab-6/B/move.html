@@ -1,0 +1,40 @@
+<!-- 2. WAP to recognize which mouse event is ƒired. (A) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouve Move Event</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <button type="button" onclick="a()"> onclick</button>
+    <button type="button" ondblclick="b()"> double click</button>
+    <button type="button" onmouseout="c()"> Move out</button>
+    <button type="button" onmousedown="d()">Mouse Down</button>
+    <button type="button" onmousemove="e()">Mouse Move</button>
+    <button type="button" onmouseover="f()"> Mouse Over</button>
+    <script type="text/javascript">
+        function a(){
+            alert("onclick");
+        }
+        function b(){
+            alert("double click");
+        }
+        function c(){
+            alert("Move out");
+        }
+        function d(){
+            alert("Mouse Down");
+        }
+        function e(){
+            alert("Mouse Move");
+        }
+        function f(){
+            alert("Mouse Over");
+        }
+    </script>
+</body>
+</html>
